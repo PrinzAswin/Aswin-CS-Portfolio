@@ -81,7 +81,7 @@ const Projects = () => {
             variants={itemVariants1}>
 
             <hr className='ruler'/>
-              <a className='projectContents' key={index}>
+              <a href="#" className='projectContents' key={index}>
                 <div className="conrow">
                   <h1 className='protitle' style={{color:'black'}}>{items.title}</h1>
                 </div>
