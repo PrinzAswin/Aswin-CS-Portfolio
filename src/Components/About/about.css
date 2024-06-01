@@ -1,0 +1,100 @@
+.aboutcontainer {
+    position: relative;
+    top: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutSection {
+    width: 55.5rem;
+}
+
+.section-intro {
+    width: 55.5rem;
+}
+
+.aboutitems {
+    font-family: poppins, serif;
+    font-weight: 400;
+    color: #1C1D20;
+    font-size: clamp(1.7rem, 30vw, 1.3rem);
+    margin-right: 0.3rem;
+}
+
+.abouttext {
+    font-family: poppins, serif;
+    font-weight: 300;
+    color: #1C1D20;
+    font-size: clamp(0.9rem, 30vw, 0.5rem);
+}
+
+.aboutlink {
+    position: absolute;
+    top: 22rem;
+    right: 7.5rem;
+    width: 11rem;
+    height: 11rem;
+    background-color: #1C1D20;
+    border-radius: 100px;
+    transition: all .2s ease-in;
+}
+
+.link {
+    position: relative;
+    top: 4.7rem;
+    left: 2.5rem;
+    font-family: poppins, serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.aboutlink:hover {
+    transition: all .2s ease-in;
+    position: absolute;
+    background-color: #455CE9;
+}
+
+.designcontainer {
+    width: 100%;
+    position: relative;
+    top: 36%;
+    gap: 5rem;
+    padding: 3.5rem 5.4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.designid {
+    font-family: poppins, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(0.8rem, 30vw, .5rem);
+    margin-bottom: 1.5rem;
+    opacity: .98;
+    color: #1C1D20;
+}
+
+.designtitle {
+    font-family: poppins, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.7rem, 30vw, .5rem);
+    margin-bottom: 1.5rem;
+    opacity: .98;
+    color: #1C1D20;
+}
+
+.horzontalrule {
+    margin-bottom: 1.5rem;
+}
+
+.designcontent {
+    font-family: poppins, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 30vw, .5rem);
+    opacity: 1;
+    color: #1C1D20;
+}

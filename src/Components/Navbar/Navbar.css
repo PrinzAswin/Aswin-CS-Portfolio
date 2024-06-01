@@ -1,0 +1,35 @@
+.Nav {
+    position: relative;
+    z-index: 4;
+    background: transparent;
+    padding: 20px;
+    font-family: poppins, serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    pointer-events: all;
+}
+
+.codebyli {
+    margin: 10px 15px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: -.003rem;
+}
+
+.pagesul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagesli,
+a {
+    margin: 10px 10px;
+    font-size: 16px;
+    color: white;
+}
