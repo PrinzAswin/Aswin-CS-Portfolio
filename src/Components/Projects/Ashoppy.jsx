@@ -48,7 +48,7 @@ const Ashoppy = () => {
             </div>
             ))}
             </div>
-              <a className='livelink' href="https://prinzaswin.github.io/Ashoppy-E-commerce-Website-/" target='_blank' >Live Link <span className="material-symbols-outlined">north_east</span></a>
+              <a className='livelink' href="https://prinzaswin.github.io/Ashoppy-E-commerce-Website-/" target='_blank' rel="noreferrer" >Live Link <span className="material-symbols-outlined">north_east</span></a>
             <div className="projectphoto">
               <div className="deviceimagecontainer">
                 <img className='deviceimage' src={device} alt="device" />

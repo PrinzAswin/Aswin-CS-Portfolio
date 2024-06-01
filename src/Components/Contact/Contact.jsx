@@ -16,8 +16,8 @@ const Contact = () => {
           <Link to='/' className="getintouchcontent">Get in touch</Link>
         </div>
         <div className="linkscontainer">
-          <button className="links linkgap"><a  className='linka' href="mailto:asw2462002@gmail.com" target='_blank' >asw2462002@gmail.com</a></button>
-          <button className="links"><a className='linka' href="https://api.whatsapp.com/send?phone=+916379150922&text=I impressed looking your Portfolio.Can you join with us!." target='_blank' >+91 63791 50922</a></button>
+          <button className="links linkgap"><a  className='linka' href="mailto:asw2462002@gmail.com" target='_blank' rel="noreferrer" >asw2462002@gmail.com</a></button>
+          <button className="links"><a className='linka' href="https://api.whatsapp.com/send?phone=+916379150922&text=I impressed looking your Portfolio.Can you join with us!." target='_blank' rel="noreferrer" >+91 63791 50922</a></button>
         </div>
         <span className="material-symbols-outlined leftarrow">south_west</span>
         <div className="footer">
@@ -34,9 +34,9 @@ const Contact = () => {
           <div className="socials">
             <h5 className='social_title'>SOCIALS</h5>
             <ul className='socialsul'>
-              <li className='socialsli'><a href="https://www.linkedin.com/in/aswin-c-s-ba3753281/" target='_blank'>LinkedIn</a></li>
-              <li className='socialsli'><a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target='_blank'>Naukri</a></li>
-              <li className='socialsli'><a href="https://www.instagram.com/prinz_ash/" target='_blank'>Instagram</a></li>
+              <li className='socialsli'><a href="https://www.linkedin.com/in/aswin-c-s-ba3753281/" target='_blank' rel="noreferrer">LinkedIn</a></li>
+              <li className='socialsli'><a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target='_blank' rel="noreferrer">Naukri</a></li>
+              <li className='socialsli'><a href="https://www.instagram.com/prinz_ash/" target='_blank' rel="noreferrer">Instagram</a></li>
             </ul>
           </div>
         </div>
