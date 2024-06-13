@@ -11,7 +11,7 @@ const HappyRentals = () => {
   const ProjectDetails = [
     {
       title: "ROLE/SERVICE",
-      detail: "✦ MERN Stack developent"
+      detail: "✦ MERN Stack development"
     },
     {
       title: "CREDITS",
