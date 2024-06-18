@@ -1,3 +1,5 @@
+/* Nav styles */
+
 .Nav {
     position: relative;
     z-index: 4;
@@ -32,4 +34,43 @@ a {
     margin: 10px 10px;
     font-size: 16px;
     color: white;
+}
+
+
+/* Media Queries for Tablet and Mobile */
+
+@media (max-width: 1024px) {
+    .Nav {
+        padding: 10px;
+    }
+    .codebyli {
+        font-size: 14px;
+        margin: 8px 10px;
+    }
+    .pagesli,
+    a {
+        font-size: 14px;
+        margin: 8px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Nav {
+        flex-direction: row;
+        padding: 10px;
+    }
+    .codebyli {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    .pagesul {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .pagesli,
+    a {
+        font-size: 14px;
+        margin: 8px 0;
+    }
 }

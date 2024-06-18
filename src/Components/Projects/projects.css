@@ -341,3 +341,53 @@
         font-weight: 500;
         opacity: .87;
     }
+    
+    @media (max-width: 480px) {
+        .projectcontainer {
+            width: 95%;
+            position: absolute;
+            left: 1rem;
+            z-index: 1000;
+            margin-top: -15rem;
+        }
+        .myprojects {
+            font-family: poppins, serif;
+            font-weight: 400;
+            color: #1C1D20;
+            font-size: clamp(1rem, 30vw, .7rem);
+            margin-right: 0.3rem;
+            opacity: 0.9;
+        }
+        .ruler {
+            width: 93%;
+            opacity: 0.5;
+        }
+        .projectContents {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            transition: .15s ease-in;
+        }
+        .protitle {
+            width: 50rem;
+            font-family: poppins, serif;
+            font-weight: 400;
+            color: #1C1D20;
+            font-size: clamp(1rem, 30vw, .7rem);
+            position: relative;
+            top: .9rem;
+            /* margin: 1rem; */
+            opacity: 0.8;
+            transition: .15s ease-in;
+        }
+        .prodiscription {
+            font-family: poppins, serif;
+            font-weight: 400;
+            color: #1C1D20;
+            font-size: clamp(.8rem, 30vw, .7rem);
+            position: relative;
+            top: 1rem;
+            margin-left: 5rem;
+            opacity: 1;
+        }
+    }

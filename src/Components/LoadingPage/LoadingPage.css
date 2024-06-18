@@ -1,3 +1,5 @@
+/* LoadingScreen styles */
+
 .LoadingScreen {
     height: 100vh;
     width: 100%;
@@ -33,5 +35,26 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+
+/* Media Queries for Tablet and Mobile */
+
+@media (max-width: 1024px) {
+    .fade-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .fade-text {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fade-text {
+        font-size: 3.5rem;
     }
 }

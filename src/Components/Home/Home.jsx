@@ -20,7 +20,8 @@ const Home = () => {
         <ul className="side-content" >
           <li><span className="material-symbols-outlined">south_east</span></li><br />
           <li className='side-content1' >Ui/Ux designer</li>
-          <li className='side-content1' >& MERN Stack Developer</li>
+          <li className='side-content1' >& MERN Stack</li>
+          <li className='side-content1' > Developer</li>
         </ul>
           <p
          className='content-slider'> — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — </p>
