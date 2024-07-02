@@ -90,6 +90,7 @@
         height: 10.9rem;
         background-position: center;
         background-size: cover;
+        box-shadow: rgba(92, 92, 92, 0.25) 0px 54px 55px, rgba(112, 112, 112, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(117, 117, 117, 0.17) 0px 12px 13px, rgba(189, 189, 189, 0.09) 0px -3px 5px;
     }
     
     .minilink {
