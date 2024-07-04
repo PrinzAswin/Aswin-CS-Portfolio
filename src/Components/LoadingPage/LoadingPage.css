@@ -19,13 +19,8 @@
     font-weight: 400;
     font-style: normal;
     font-size: 3.5rem;
-    animation: .6s infinite linear fade;
+    animation: .6s linear infinite fade;
     animation-direction: alternate;
-}
-
-.fade-text .visibleload {
-    opacity: 1;
-    visibility: visible;
 }
 
 @keyframes fade {
@@ -60,6 +55,6 @@
 
 @media (max-width: 480px) {
     .fade-text {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }

@@ -152,13 +152,13 @@
     }
     .aboutitems,
     .abouttext {
-        font-size: clamp(.4rem, 10vw, 0.65rem);
+        font-size: clamp(.4rem, 10vw, 0.8rem);
         text-align: center;
         width: 60%;
     }
     .abouttext {
         position: absolute;
-        left: -3.5rem;
+        left: -2.5rem;
         top: 9rem;
     }
     .aboutlink {

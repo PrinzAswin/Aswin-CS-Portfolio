@@ -7,7 +7,7 @@ const LoadingPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const variants= {
         closed:{
-            clipPath: "circle(130% at 30% 90% )",
+            clipPath: "circle(140% at 50% 90% )",
             transition: {
                 duration: 2.5,
                 type: "spring",
