@@ -8,7 +8,7 @@ const Contact = () => {
       <div id='contact' className="contactpage">
         <div className="Title">
           <h1 className='title'><img className="logopic" src="./logo2.jpg" alt="#Aswin" />Let’s work</h1>
-          <h1 className='title'>together</h1>
+          <h1 className='title togther'>together</h1>
           <hr className='hr'/>
         </div>
 
@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="conclusion">
             <div className="credits">
              <h5 className='version'>VERSION</h5>
-             <p>2024 &copy; Edition</p>
+             <p className='edition'>2024 &copy; Edition</p>
             </div>
             <div className="localtime">
              <h5 className="timetitle">LOCAL TIME</h5>
