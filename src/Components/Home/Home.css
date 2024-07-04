@@ -285,7 +285,7 @@ html::-webkit-scrollbar {
     }
     .blockcontent {
         border-radius: 100px 0 0 100px;
-        width: 12.5rem;
+        width: 16rem;
         height: 5.75rem;
         position: absolute;
         text-align: center;

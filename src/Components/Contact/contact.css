@@ -214,7 +214,24 @@
         width: 100%;
         height: 100vh;
         position: absolute;
-        bottom: 5rem;
+        margin-top: -7rem;
         background-color: #1C1D20;
+    }
+    .Title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: auto;
+        line-height: 5rem;
+        position: relative;
+        top: 6rem;
+        left: 13rem;
+    }
+    .title {
+        font-family: poppins, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(5rem, 15vw, .7rem);
+        color: white;
     }
 }
