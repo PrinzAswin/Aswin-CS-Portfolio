@@ -152,7 +152,7 @@
     }
     .aboutitems,
     .abouttext {
-        font-size: clamp(.4rem, 10vw, 0.8rem);
+        font-size: clamp(.4rem, 10vw, 0.77rem);
         text-align: center;
         width: 60%;
     }
