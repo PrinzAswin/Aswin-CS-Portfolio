@@ -5,7 +5,7 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 const Home = () => {
- 
+
   return (
     <>
       <Navbar />
@@ -25,6 +25,7 @@ const Home = () => {
         </ul>
           <p
          className='content-slider'> — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — </p>
+        
         </main>
         <About/>
         <Projects/>

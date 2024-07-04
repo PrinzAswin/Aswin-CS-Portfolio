@@ -226,9 +226,8 @@ const designcontainer = [
         <span className='abouttext'>The combination of my passion <br/> for design, code & interaction <br/>positions me in a unique place <br/> in the web design world.</span>
       </div>
     </div>
-        <div className="aboutlink">
-          <Link className='link' to='/about'>About me</Link>
-          <i className='i'></i>
+        <div className="aboutlink ">
+          <Link to='/about' className='link'>About me</Link> 
         </div>
       
       <div className="designcontainer">

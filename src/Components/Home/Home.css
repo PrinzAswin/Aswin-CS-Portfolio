@@ -173,7 +173,7 @@ html::-webkit-scrollbar {
 
 @media (max-width: 768px) {
     .Mypic {
-        width: 103%;
+        width: 100%;
         height: auto;
         background-size: cover;
     }
@@ -238,21 +238,22 @@ html::-webkit-scrollbar {
 
 @media (max-width: 480px) {
     .Mypic {
-        width: 175%;
-        height: 100%;
+        width: 138vw;
+        height: 120vh;
         top: .5rem;
-        left: -10.5rem;
+        left: -5.5rem;
         background-position: center;
         background-size: cover;
     }
-    .side-content {
+    /* .side-content {
         font-size: clamp(1rem, 10vw, 0.8rem);
-    }
+        top: 3rem;
+    } */
     .Location {
         font-size: clamp(1rem, 7vw, 1rem);
         position: absolute;
-        top: 48.1rem;
-        left: 18rem;
+        top: 35.1rem;
+        left: 17.2rem;
     }
     .globe_gif {
         position: relative;
@@ -268,7 +269,7 @@ html::-webkit-scrollbar {
     }
     .globebg {
         position: relative;
-        top: 48rem;
+        top: 35rem;
         left: 11.6rem;
         width: 4rem;
         height: 4rem;
@@ -284,22 +285,23 @@ html::-webkit-scrollbar {
     }
     .blockcontent {
         border-radius: 100px 0 0 100px;
-        width: 15.1rem;
-        height: 5.85rem;
+        width: 12.5rem;
+        height: 5.75rem;
         position: absolute;
         text-align: center;
-        top: 47.1rem;
+        top: 34.1rem;
         right: 0;
         background-color: #1C1D20;
     }
     .side-content {
         font-size: clamp(1.2rem, 15vw, 0.6rem);
-        top: 50%;
+        top: 60%;
         left: 3%;
     }
     .content-slider {
         font-size: clamp(10rem, 25vw, 2rem);
         position: relative;
         top: 25%;
+        overflow-x: none;
     }
 }

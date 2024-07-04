@@ -208,3 +208,13 @@
     transition: all .2s ease-in-out;
     text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+    .contactpage {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        bottom: 5rem;
+        background-color: #1C1D20;
+    }
+}

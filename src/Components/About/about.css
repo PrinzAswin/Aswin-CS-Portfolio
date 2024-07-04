@@ -34,6 +34,7 @@
     right: 7.5rem;
     width: 11rem;
     height: 11rem;
+    border: none;
     background-color: #1C1D20;
     border-radius: 100px;
     transition: all .2s ease-in;
@@ -41,10 +42,13 @@
 
 .link {
     position: relative;
-    top: 4.7rem;
-    left: 2.5rem;
     font-family: poppins, serif;
     font-weight: 400;
+    display: flex;
+    top: 4.2rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-size: 1rem;
 }
 
@@ -133,9 +137,9 @@
 
 @media (max-width: 480px) {
     .aboutcontainer {
-        width: 100%;
+        width: 138vw;
         flex-direction: column;
-        top: 3rem;
+        top: 2rem;
         padding: 1rem;
     }
     .aboutSection {
@@ -148,14 +152,14 @@
     }
     .aboutitems,
     .abouttext {
-        font-size: clamp(.4rem, 10vw, 0.8rem);
+        font-size: clamp(.4rem, 10vw, 0.65rem);
         text-align: center;
         width: 60%;
     }
     .abouttext {
         position: absolute;
-        left: -.5rem;
-        top: 13rem;
+        left: -3.5rem;
+        top: 9rem;
     }
     .aboutlink {
         top: 13rem;
@@ -164,11 +168,14 @@
         height: 7rem;
     }
     .link {
-        top: 2.7rem;
-        left: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 2.5rem;
+        font-size: clamp(.4rem, 10vw, 0.75rem);
     }
     .designcontainer {
-        margin-top: -19rem;
+        margin-top: -17rem;
         flex-direction: column;
         gap: 2rem;
         padding: 1.5rem;

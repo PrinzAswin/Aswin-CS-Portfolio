@@ -94,7 +94,7 @@ const Projects = () => {
         ))}
         <hr className='ruler' />
         {isvisible && (
-          <div className="hover-box" style={{top: mouseposition.y,left: mouseposition.x}}>
+          <div className="hover-box proj-box" style={{top: mouseposition.y,left: mouseposition.x}}>
             <img className='mini-title' src={hoveredTitle} alt='preview' />
             <div className="minilink"><Link to={hoveredTitle}>View</Link></div>
           </div>
