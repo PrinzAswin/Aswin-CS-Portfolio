@@ -255,7 +255,7 @@ html::-webkit-scrollbar {
     .sliderContainer {
         max-width: 100vw;
         position: absolute;
-        bottom: 20rem;
+        bottom: 24rem;
         overflow-x: hidden;
     }
     .Location {
