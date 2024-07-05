@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './contact.css';
 import { Link } from 'react-router-dom'; 
 const Contact = () => {
+  
+    const [ time, setTime ] = useState(new Date());
+
+    useEffect(() => {
+      const timerID = setInterval(() => setTime(new Date()),1000);
+
+      return() => clearInterval(timerID);
+    }, []);
 
   return (
     <>
@@ -28,7 +36,7 @@ const Contact = () => {
             </div>
             <div className="localtime">
              <h5 className="timetitle">LOCAL TIME</h5>
-             <p className='time'>04:52 PM IND</p> 
+             <p className='time'>{time.toLocaleTimeString()} IND</p> 
             </div>
           </div>s
           <div className="socials">
