@@ -318,9 +318,9 @@ html::-webkit-scrollbar {
 @media (max-width: 480px) {
     .Mypic {
         width: 143vw;
-        height: 120vh;
+        height: 100vh;
         top: .5rem;
-        left: -5.5rem;
+        left: -6.5rem;
         background-position: center;
         background-size: cover;
     }
