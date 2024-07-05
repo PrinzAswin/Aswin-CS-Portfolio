@@ -314,3 +314,24 @@ html::-webkit-scrollbar {
         overflow-x: none;
     }
 }
+
+@media (max-width: 480px) {
+    .Mypic {
+        width: 140vw;
+        height: 120vh;
+        top: .5rem;
+        left: -5.5rem;
+        background-position: center;
+        background-size: cover;
+    }
+    .blockcontent {
+        border-radius: 100px 0 0 100px;
+        width: 12.7rem;
+        height: 5.75rem;
+        position: absolute;
+        text-align: center;
+        top: 34.1rem;
+        right: 0;
+        background-color: #1C1D20;
+    }
+}
