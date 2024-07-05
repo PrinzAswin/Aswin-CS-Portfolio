@@ -343,7 +343,7 @@
         opacity: .87;
     }
     
-    @media (max-width: 480px) {
+    @media (max-width: 375px) {
         .projectcontainer {
             width: 138vw;
             height: 10rem;

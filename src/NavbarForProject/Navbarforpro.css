@@ -38,7 +38,7 @@
     opacity: 0.9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     .Nav2 {
         flex-direction: row;
         padding: 10px;

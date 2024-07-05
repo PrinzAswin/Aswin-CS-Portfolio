@@ -49,7 +49,6 @@ html::-webkit-scrollbar {
     height: 120vh;
     background: hsla(330, 1%, 70%, 1);
     background: linear-gradient(180deg, hsla(330, 1%, 70%, 1) 0%, #c7c7c7 100%);
-    pointer-events: none;
     overflow: none;
 }
 
@@ -155,6 +154,12 @@ html::-webkit-scrollbar {
     }
 }
 
+.sliderContainer {
+    width: 100vw;
+    position: absolute;
+    bottom: 6.5rem;
+}
+
 
 /* Media Queries for Tablet and Mobile */
 
@@ -236,19 +241,30 @@ html::-webkit-scrollbar {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .Mypic {
-        width: 138vw;
-        height: 120vh;
+        width: 150%;
+        height: 130vh;
         top: .5rem;
-        left: -5.5rem;
+        left: -7rem;
         background-position: center;
         background-size: cover;
     }
-    /* .side-content {
-        font-size: clamp(1rem, 10vw, 0.8rem);
-        top: 3rem;
-    } */
+    .Homepage {
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background: hsla(330, 1%, 70%, 1);
+        background: linear-gradient(180deg, hsla(330, 1%, 70%, 1) 0%, #c7c7c7 100%);
+        overflow: none;
+    }
+    .sliderContainer {
+        max-width: 100vw;
+        position: relative;
+        top: 12rem;
+        overflow-x: hidden;
+        z-index: 9999999;
+    }
     .Location {
         font-size: clamp(1rem, 7vw, 1rem);
         position: absolute;
@@ -275,10 +291,6 @@ html::-webkit-scrollbar {
         height: 4rem;
         background-color: #999D9E;
         border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-        -ms-border-radius: 100px;
-        -o-border-radius: 100px;
     }
     .leftsidecontent {
         position: relative;
@@ -299,9 +311,7 @@ html::-webkit-scrollbar {
         left: 3%;
     }
     .content-slider {
-        font-size: clamp(10rem, 25vw, 2rem);
         position: relative;
-        top: 25%;
-        overflow-x: none;
+        font-size: clamp(10rem, 25vw, 2rem);
     }
 }

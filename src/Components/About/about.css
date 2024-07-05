@@ -135,7 +135,17 @@
 
 /* Mobile styles */
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
+    .section {
+        width: 100vw;
+        height: 160vh;
+        background-color: #FFFFFF;
+        position: absolute;
+        z-index: 100;
+        top: 100%;
+        color: #1a1822;
+        border-radius: 15px 15px 0 0;
+    }
     .aboutcontainer {
         width: 138vw;
         flex-direction: column;

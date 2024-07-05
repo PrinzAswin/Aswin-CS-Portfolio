@@ -209,7 +209,7 @@
     text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .contactpage {
         max-width: 138vw;
         height: 100vh;
