@@ -135,7 +135,7 @@
 
 /* Mobile styles */
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .section {
         width: 100vw;
         height: 160vh;

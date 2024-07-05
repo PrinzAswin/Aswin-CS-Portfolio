@@ -208,7 +208,7 @@
     text-decoration: underline;
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .contactpage {
         max-width: 138vw;
         height: 100vh;

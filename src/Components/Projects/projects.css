@@ -343,7 +343,7 @@
         opacity: .87;
     }
     
-    @media (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
         .projectcontainer {
             width: 138vw;
             height: 10rem;

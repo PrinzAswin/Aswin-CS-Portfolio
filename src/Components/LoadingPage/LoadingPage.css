@@ -42,19 +42,19 @@
 
 /* Media Queries for Tablet and Mobile */
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
     .fade-text {
         font-size: 2.5rem;
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .fade-text {
         font-size: 5rem;
     }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .fade-text {
         font-family: "Kalam", cursive;
         font-size: 2.5rem;

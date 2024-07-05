@@ -241,7 +241,7 @@ html::-webkit-scrollbar {
     }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .Mypic {
         width: 150%;
         height: 130vh;
