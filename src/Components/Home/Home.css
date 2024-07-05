@@ -243,10 +243,10 @@ html::-webkit-scrollbar {
 
 @media only screen and (max-width: 600px) {
     .Mypic {
-        width: 150%;
+        width: 148%;
         height: 130vh;
         top: .5rem;
-        left: -7rem;
+        left: -8rem;
         background-position: center;
         background-size: cover;
     }
@@ -307,7 +307,7 @@ html::-webkit-scrollbar {
     }
     .side-content {
         font-size: clamp(1.2rem, 15vw, 0.6rem);
-        top: 60%;
+        top: 57%;
         left: 3%;
     }
     .content-slider {
