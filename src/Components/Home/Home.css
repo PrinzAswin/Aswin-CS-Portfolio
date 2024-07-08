@@ -17,6 +17,27 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
 .section {
     width: 100vw;
     height: 160vh;
@@ -25,7 +46,7 @@ html::-webkit-scrollbar {
     z-index: 100;
     top: 115%;
     color: #1a1822;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 
@@ -66,10 +87,9 @@ html::-webkit-scrollbar {
     font-weight: 400;
     font-style: normal;
     font-size: clamp(1.8rem, 5vw, 1rem);
-    /* Adjusted for responsiveness */
     color: white;
     position: absolute;
-    top: 22.5%;
+    top: 21%;
     right: 10%;
 }
 
@@ -125,34 +145,12 @@ html::-webkit-scrollbar {
     overflow-x: hidden;
     display: inline-block;
     position: relative;
-    bottom: -40%;
+    top: .5rem;
     font-family: poppins, serif;
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
     font-size: clamp(11rem, 15vw, 6rem);
-    /* Adjusted for responsiveness */
-    animation: moveLeftToRight 85s linear infinite;
-    -webkit-animation: moveLeftToRight 85s linear infinite;
-}
-
-@keyframes moveLeftToRight {
-    0% {
-        transition: 3s linear;
-        transform: translateX(80%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        -o-transform: translateX(0%);
-    }
-    100% {
-        transition: 3s linear;
-        transform: translateX(-85%);
-        -webkit-transform: translateX(-85%);
-        -moz-transform: translateX(-85%);
-        -ms-transform: translateX(-85%);
-        -o-transform: translateX(-85%);
-    }
 }
 
 .sliderContainer {

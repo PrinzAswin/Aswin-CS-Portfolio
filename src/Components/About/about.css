@@ -17,7 +17,7 @@
     font-family: poppins, serif;
     font-weight: 400;
     color: #1C1D20;
-    font-size: clamp(1.3rem, 30vw, 1.7rem);
+    font-size: clamp(.7rem, 30vw, 1.7rem);
     margin-right: 0.3rem;
 }
 
@@ -37,7 +37,6 @@
     border: none;
     background-color: #1C1D20;
     border-radius: 100px;
-    transition: all .2s ease-in;
 }
 
 .link {
@@ -45,16 +44,15 @@
     font-family: poppins, serif;
     font-weight: 400;
     display: flex;
-    top: 4.2rem;
+    top: 4.7rem;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .aboutlink:hover {
-    transition: all .2s ease-in;
-    position: absolute;
     background-color: #455CE9;
 }
 
@@ -73,7 +71,7 @@
     font-family: poppins, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: clamp(0.5rem, 30vw, 0.8rem);
+    font-size: clamp(0.5rem, 0vw, 0.8rem);
     margin-bottom: 1.5rem;
     opacity: .98;
     color: #1C1D20;
@@ -83,7 +81,7 @@
     font-family: poppins, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(0.5rem, 30vw, 1.7rem);
+    font-size: clamp(0.5rem, 10vw, 1.7rem);
     margin-bottom: 1.5rem;
     opacity: .98;
     color: #1C1D20;
@@ -97,7 +95,7 @@
     font-family: poppins, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(0.5rem, 30vw, 1rem);
+    font-size: clamp(0.5rem, 10vw, 1rem);
     opacity: 1;
     color: #1C1D20;
 }

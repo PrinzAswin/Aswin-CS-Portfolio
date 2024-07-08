@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './contact.css';
-import { Link } from 'react-router-dom'; 
+import { motion } from 'framer-motion';
+
 const Contact = () => {
   
     const [ time, setTime ] = useState(new Date());
@@ -11,6 +12,20 @@ const Contact = () => {
       return() => clearInterval(timerID);
     }, []);
 
+    const refer = useRef(null);
+  const [ position, setPosition ] = useState({x: 0,y: 0});
+
+  const handleMouse = (e) => {
+    const { clientX, clientY } = e;
+    const {height, width, left, top} = refer.current.getBoundingClientRect();
+    const middleX = clientX - (left + width/2)
+    const middleY = clientY - (top + height/2)
+    setPosition({x: middleX, y: middleY})
+  }
+  const reset = () => {
+    setPosition({x: 0,y: 0})
+  }
+  const {x, y} = position;
   return (
     <>
       <div id='contact' className="contactpage">
@@ -20,9 +35,19 @@ const Contact = () => {
           <hr className='hr'/>
         </div>
 
-        <div className="getintouch">
-          <Link to='/' className="getintouchcontent">Get in touch</Link>
-        </div>
+        <motion.div className="getintouch"
+          ref={refer}
+          onMouseMove={handleMouse}
+          onMouseLeave={reset}
+          animate={{x, y}}
+          transition={{ type: "spring", damping: 8, stiffness: 200, mass: .5}}>
+          <motion.p className="getintouchcontent"
+          ref={refer}
+          onMouseMove={handleMouse}
+          onMouseLeave={reset}
+          animate={{x, y}}
+          transition={{ type: "spring", damping: 8, stiffness: 200, mass: .5}}>Get in touch</motion.p>
+        </motion.div>
         <div className="linkscontainer">
           <button className="links linkgap"><a  className='linka' href="mailto:asw2462002@gmail.com" target='_blank' rel="noreferrer" >asw2462002@gmail.com</a></button>
           <button className="links"><a className='linka' href="https://api.whatsapp.com/send?phone=+916379150922&text=I impressed looking your Portfolio.Can you join with us!." target='_blank' rel="noreferrer" >+91 63791 50922</a></button>

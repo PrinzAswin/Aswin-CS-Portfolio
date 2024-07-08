@@ -1,7 +1,6 @@
-import React from 'react';
+import React,{useRef, useState} from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom';
 import './about.css';
 const About = () => {
 
@@ -166,6 +165,22 @@ const designcontainer = [
     threshold: 0.1,
   });
 
+  // magnetic button
+
+  const refer = useRef(null);
+  const [ position, setPosition ] = useState({x: 0,y: 0});
+
+  const handleMouse = (e) => {
+    const { clientX, clientY } = e;
+    const {height, width, left, top} = refer.current.getBoundingClientRect();
+    const middleX = clientX - (left + width/2)
+    const middleY = clientY - (top + height/2)
+    setPosition({x: middleX, y: middleY})
+  }
+  const reset = () => {
+    setPosition({x: 0,y: 0})
+  }
+  const {x, y} = position;
   return (
     <>
     <section id="about" className='section'>
@@ -226,9 +241,21 @@ const designcontainer = [
         <span className='abouttext'>The combination of my passion <br/> for design, code & interaction <br/>positions me in a unique place <br/> in the web design world.</span>
       </div>
     </div>
-        <div className="aboutlink ">
-          <Link to='/about' className='link'>About me</Link> 
-        </div>
+        <motion.div 
+          ref={refer}
+          onMouseMove={handleMouse}
+          onMouseLeave={reset}
+          animate={{x, y}}
+          transition={{ type: "spring", damping: 8, stiffness: 200, mass: .5}}
+          className="aboutlink ">
+          <motion.p to='/about' 
+           ref={refer}
+           onMouseMove={handleMouse}
+           onMouseLeave={reset}
+           animate={{x, y}}
+           transition={{type: "spring", damping: 10, stiffness: 200, mass: .7}}
+           className='link'>About me</motion.p> 
+        </motion.div>
       
       <div className="designcontainer">
         {designcontainer.map((design, index) => (
