@@ -26,7 +26,7 @@ const Home = () => {
     stiffness: 300,
   });
 
-  const velocityFactor = useTransform(smoothVelocity, [0, 3000], [0, 8], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 3000], [0, 4], {
     clamp: false,
   });
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);

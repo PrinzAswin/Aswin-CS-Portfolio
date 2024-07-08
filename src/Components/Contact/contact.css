@@ -57,7 +57,6 @@
     top: 4.7rem;
     left: 55rem;
     cursor: pointer;
-    z-index: 999999;
 }
 
 .getintouch:hover {
@@ -73,7 +72,7 @@
     font-style: normal;
     font-size: clamp(0.9rem, 30vw, 1rem);
     color: white;
-    z-index: -9999;
+    z-index: 999;
 }
 
 .linkscontainer {
