@@ -19,22 +19,6 @@ const Navbar = () => {
   }
   const {x, y} = position;
 
-  // margnet 2
-  const refer2 = useRef(null);
-  const [ positiontwo, setPositiontwo ] = useState({xx: 0, yy: 0});
-
-  const handleMouse2 = (event) => {
-    const { clientX, clientY } = event;
-    const {height, width, left, top} = refer2.current.getBoundingClientRect();
-    const middleX = clientX - (left + width/2)
-    const middleY = clientY - (top + height/2)
-    setPositiontwo({xx: middleX, yy: middleY})
-  }
-  const reset2 = () => {
-    setPositiontwo({x: 0,y: 0})
-  }
-  const {xx, yy} = positiontwo;
-
   const navMenu = [
     {name: "About",link: "#about"},
     {name: "Projects",link: "#projects"},
