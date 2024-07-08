@@ -26,14 +26,14 @@ const Home = () => {
     stiffness: 300,
   });
 
-  const velocityFactor = useTransform(smoothVelocity, [0, 3000], [0, 4], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 2000], [0, 4], {
     clamp: false,
   });
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-10, -45, v)}%`);
   const directionFactor = useRef(1);
 
   useAnimationFrame((t, delta) => {
-    let moveBy = directionFactor.current * 1.8 * (delta / 3000);
+    let moveBy = directionFactor.current * 1.2 * (delta / 3000);
     if (velocityFactor.get() < 0){
       directionFactor.current = -1;
     }
@@ -43,23 +43,31 @@ const Home = () => {
       moveBy += directionFactor.current * moveBy * velocityFactor.get();
       baseX.set(baseX.get() + moveBy);
   });
+
+  // parallax
+  const y1 = useTransform(scrollY, [0, 300], [0, 100]);
+  const y2 = useTransform(scrollY, [0, 300], [0, 150]);
+
   return (
     <>
       <Navbar />
       <main className='Homepage'> 
+      <motion.div className="box" style={{ y: y1, x: 0 }}>
       <img className='Mypic' src='Images/Aswin.jpg' alt='Aswin' width='300' />
       <div className='leftsidecontent'>
         <div className='blockcontent'></div>
           <div className="Location" >Located in<br />Tamilnadu,<br />Madurai</div>
           <div className='globebg'><img className='globe_gif' src='Images/globe.gif' alt='Location' /> </div>
       </div> 
+      </motion.div>
         
-        <ul className="side-content" >
+        <motion.ul className="side-content"
+         style={{ y: y2, x: 0 }} >
           <li><span className="material-symbols-outlined">south_east</span></li><br />
           <li className='side-content1' >Ui/Ux designer</li>
           <li className='side-content1' >& MERN Stack</li>
           <li className='side-content1' > Developer</li>
-        </ul>
+        </motion.ul>
         <div className="sliderContainer">
           {/* <p
          > — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — </p> */}

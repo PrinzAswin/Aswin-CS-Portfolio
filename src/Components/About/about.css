@@ -17,7 +17,7 @@
     font-family: poppins, serif;
     font-weight: 400;
     color: #1C1D20;
-    font-size: clamp(.7rem, 30vw, 1.7rem);
+    font-size: clamp(.5rem, 30vw, 1.68rem);
     margin-right: 0.3rem;
 }
 
@@ -25,7 +25,7 @@
     font-family: poppins, serif;
     font-weight: 300;
     color: #1C1D20;
-    font-size: clamp(0.9rem, 30vw, 0.5rem);
+    font-size: clamp(0.88rem, 30vw, 0.7rem);
 }
 
 .aboutlink {
@@ -71,7 +71,7 @@
     font-family: poppins, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: clamp(0.5rem, 0vw, 0.8rem);
+    font-size: clamp(0.8rem, 0vw, 0.8rem);
     margin-bottom: 1.5rem;
     opacity: .98;
     color: #1C1D20;

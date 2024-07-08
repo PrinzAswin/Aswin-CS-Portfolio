@@ -246,14 +246,14 @@ const designcontainer = [
           onMouseMove={handleMouse}
           onMouseLeave={reset}
           animate={{x, y}}
-          transition={{ type: "spring", damping: 8, stiffness: 200, mass: .5}}
+          transition={{ type: "spring", damping: 40, stiffness: 500, mass: 3}}
           className="aboutlink ">
           <motion.p to='/about' 
            ref={refer}
            onMouseMove={handleMouse}
            onMouseLeave={reset}
            animate={{x, y}}
-           transition={{type: "spring", damping: 10, stiffness: 200, mass: .7}}
+           transition={{type: "spring", damping: 30, stiffness: 500, mass: 3}}
            className='link'>About me</motion.p> 
         </motion.div>
       

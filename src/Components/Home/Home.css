@@ -96,7 +96,7 @@ html.lenis body {
 .Location {
     position: absolute;
     top: 17.1rem;
-    left: 2.5rem;
+    left: 4rem;
     font-family: poppins, serif;
     font-weight: 400;
     font-style: normal;
@@ -117,7 +117,7 @@ html.lenis body {
 
 .globebg {
     position: relative;
-    top: 17rem;
+    top: 17.05rem;
     left: 10.2rem;
     width: 4rem;
     height: 4rem;
@@ -141,7 +141,7 @@ html.lenis body {
 
 .content-slider {
     width: max-content;
-    height: 100%;
+    height: 50%;
     overflow-x: hidden;
     display: inline-block;
     position: relative;
@@ -154,27 +154,15 @@ html.lenis body {
 }
 
 .sliderContainer {
-    width: 100%;
+    width: 100vw;
+    height: 30.3rem;
     position: absolute;
     cursor: default;
-    bottom: 7rem;
+    bottom: -6rem;
 }
 
 
 /* Media Queries for Tablet and Mobile */
-
-@media (max-width: 1024px) {
-    .side-content {
-        font-size: clamp(1.4rem, 7vw, 0.8rem);
-        top: 25%;
-    }
-    .Location {
-        font-size: clamp(0.8rem, 7vw, 0.5rem);
-    }
-    .content-slider {
-        font-size: clamp(8rem, 15vw, 3rem);
-    }
-}
 
 @media (max-width: 768px) {
     .Mypic {

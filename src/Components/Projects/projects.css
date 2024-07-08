@@ -24,11 +24,9 @@
         display: flex;
         align-items: center;
         width: 100%;
-        transition: .15s ease-in;
     }
     
     .projectContents:hover {
-        transition: .15s ease-in;
         opacity: .6;
         gap: 1rem;
     }
@@ -47,12 +45,11 @@
         bottom: .9rem;
         margin: 1rem;
         opacity: 0.8;
-        transition: .15s ease-in;
+        transition: all .23s ease;
     }
     
     .protitle:hover {
         left: 3.3rem;
-        transition: .15s ease-in;
     }
     
     .prodiscription {
@@ -73,7 +70,6 @@
         background-color: #f1f1f1;
         transform: translate(-68%, -163%);
         cursor: pointer;
-        transition: .15s ease;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,7 +77,6 @@
     }
     
     .mini-title {
-        transition: .15s ease-in-out;
         border-radius: 8px;
         position: absolute;
         top: 6rem;

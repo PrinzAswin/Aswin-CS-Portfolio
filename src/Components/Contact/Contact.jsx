@@ -40,13 +40,13 @@ const Contact = () => {
           onMouseMove={handleMouse}
           onMouseLeave={reset}
           animate={{x, y}}
-          transition={{ type: "spring", damping: 8, stiffness: 200, mass: .5}}>
+          transition={{ type: "spring", damping: 50, stiffness: 500, mass: 4}}>
           <motion.p className="getintouchcontent"
           ref={refer}
           onMouseMove={handleMouse}
           onMouseLeave={reset}
           animate={{x, y}}
-          transition={{ type: "spring", damping: 9, stiffness: 200, mass: .5}}>Get in touch</motion.p>
+          transition={{ type: "spring", damping: 50, stiffness: 500, mass: 4}}>Get in touch</motion.p>
         </motion.div>
         <div className="linkscontainer">
           <button className="links linkgap"><a  className='linka' href="mailto:asw2462002@gmail.com" target='_blank' rel="noreferrer" >asw2462002@gmail.com</a></button>

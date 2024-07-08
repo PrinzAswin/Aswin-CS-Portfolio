@@ -66,7 +66,7 @@ const Projects = () => {
       <motion.div 
       id='projects' 
       className="projectcontainer" 
-      ref={ref} 
+      ref={ref}
       variants={containerVariants1}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}>
