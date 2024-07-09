@@ -233,7 +233,7 @@ html.lenis body {
 
 @media (max-width: 480px) {
     .Mypic {
-        max-width: 100vw;
+        min-width: 134vw;
         height: 100vh;
         top: .5rem;
         left: -5.5rem;
@@ -244,7 +244,7 @@ html.lenis body {
     .sliderContainer {
         max-width: 100vw;
         position: absolute;
-        bottom: 24rem;
+        top: 0;
         overflow-x: hidden;
     }
     .Location {
@@ -283,7 +283,7 @@ html.lenis body {
     }
     .blockcontent {
         border-radius: 100px 0 0 100px;
-        width: 12.7rem;
+        width: 13rem;
         height: 5.75rem;
         position: absolute;
         text-align: center;
@@ -293,7 +293,7 @@ html.lenis body {
     }
     .side-content {
         font-size: clamp(1.2rem, 15vw, 0.6rem);
-        top: 59%;
+        top: 30rem;
         left: 3%;
     }
     .content-slider {

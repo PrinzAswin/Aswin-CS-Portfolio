@@ -133,14 +133,14 @@
 
 /* Mobile styles */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .section {
         width: 100vw;
         height: 160vh;
         background-color: #FFFFFF;
         position: absolute;
         z-index: 100;
-        top: 100%;
+        top: 90%;
         color: #1a1822;
         border-radius: 15px 15px 0 0;
     }
