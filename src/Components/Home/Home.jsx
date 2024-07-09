@@ -69,8 +69,6 @@ const Home = () => {
           <li className='side-content1' > Developer</li>
         </motion.ul>
         <div className="sliderContainer">
-          {/* <p
-         > — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — Aswin cs • Ui/Ux designer & MERN Stack Developer — </p> */}
          <motion.div className='content-slider' style={{ x }}>
             <motion.span> — Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
             <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
