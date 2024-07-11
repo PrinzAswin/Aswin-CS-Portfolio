@@ -7,16 +7,16 @@ import { useInView } from 'react-intersection-observer';
 const Projects = () => {
   const projectItems=[
     {
-      title: "Happy Rentals",
-      discription: "MERN Stack Development",
-      link: "/projects/HappyRentals",
-      image: "./happyRentals.png"
-    },
-    {
       title: "Ashoppy.in",
       discription: "Design & Development",
       link: "/projects/Ashoppy.in",
       image: "./ashoppy.png"
+    },
+    {
+      title: "Happy Rentals",
+      discription: "MERN Stack Development",
+      link: "/projects/HappyRentals",
+      image: "./happyRentals.png"
     }
   ];
 
@@ -36,7 +36,7 @@ const Projects = () => {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeInOut' } },
   };
-
+  
   const [ref, inView] = useInView({
     threshold: 0.1,
   });
@@ -94,10 +94,10 @@ const Projects = () => {
         ))}
         <hr className='ruler' />
         {isvisible && (
-          <div className="hover-box proj-box" style={{top: mouseposition.y,left: mouseposition.x}}>
+          <motion.div  className="hover-box" style={{top: mouseposition.y,left: mouseposition.x}}>
             <img className='mini-title' src={hoveredTitle} alt='preview' />
             <div className="minilink"><Link to={hoveredTitle}>View</Link></div>
-          </div>
+          </motion.div>
         )}
       </motion.div>
     </>

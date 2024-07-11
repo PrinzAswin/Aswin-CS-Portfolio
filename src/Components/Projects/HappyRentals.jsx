@@ -99,7 +99,6 @@ const HappyRentals = () => {
                 ))}
               </div>
             </div>
-            
         </>)
       }
       
