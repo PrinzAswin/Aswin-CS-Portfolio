@@ -39,6 +39,11 @@ html.lenis body {
     pointer-events: none;
 }
 
+.html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .section {
     width: 100vw;
     height: 160vh;
@@ -87,11 +92,11 @@ html.lenis body {
     font-family: poppins, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(1.8rem, 5vw, 1rem);
+    font-size: clamp(1.35rem, 5vw, .7rem);
     color: white;
     position: absolute;
-    top: 21%;
-    right: 10%;
+    top: 25%;
+    right: 18%;
 }
 
 .Location {
@@ -103,7 +108,7 @@ html.lenis body {
     font-style: normal;
     line-height: 1.3rem;
     color: white;
-    font-size: clamp(1rem, 5vw, .7rem);
+    font-size: clamp(1rem, 50vw, .7rem);
     /* Adjusted for responsiveness */
 }
 
