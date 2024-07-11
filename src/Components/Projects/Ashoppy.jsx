@@ -16,7 +16,7 @@ const Ashoppy = () => {
     },
     {
       title: "CREDITS",
-      detail: "Design: Aswin CS"
+      detail: "Designer: Aswin CS"
     },
     {
       title: "DURATION & YEAR",
