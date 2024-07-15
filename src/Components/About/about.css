@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    user-select: none;
 }
 
 .aboutSection,
@@ -136,7 +137,7 @@
 @media only screen and (max-width: 480px) {
     .section {
         width: 100vw;
-        height: 160vh;
+        height: 100vh;
         background-color: #FFFFFF;
         position: absolute;
         z-index: 100;
@@ -160,7 +161,7 @@
     }
     .aboutitems,
     .abouttext {
-        font-size: clamp(.4rem, 10vw, 0.77rem);
+        font-size: clamp(.35rem, 10vw, 0.77rem);
         text-align: center;
         width: 60%;
     }
@@ -179,11 +180,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 2.5rem;
+        top: 2.9rem;
         font-size: clamp(.4rem, 10vw, 0.75rem);
     }
     .designcontainer {
-        margin-top: -17rem;
+        position: relative;
+        top: 16rem;
         flex-direction: column;
         gap: 2rem;
         padding: 1.5rem;

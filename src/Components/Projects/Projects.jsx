@@ -81,14 +81,14 @@ const Projects = () => {
             variants={itemVariants1}>
 
             <hr className='ruler'/>
-              <a href={projectItems.link} className='projectContents' key={index}>
+              <Link to={projectItems.link} className='projectContents' key={index}>
                 <div className="conrow">
                   <h1 className='protitle' style={{color:'black'}}>{items.title}</h1>
                 </div>
                 <div className="concol">
                   <p className='prodiscription' style={{color:'black'}}>{items.discription}</p>
                 </div>
-              </a>
+              </Link>
             </motion.div>
           </Link>
         ))}
@@ -96,7 +96,7 @@ const Projects = () => {
         {isvisible && (
           <motion.div  className="hover-box" style={{top: mouseposition.y,left: mouseposition.x}}>
             <img className='mini-title' src={hoveredTitle} alt='preview' />
-            <div className="minilink"><Link to={hoveredTitle}>View</Link></div>
+            <div className="minilink"><a href={hoveredTitle}>View</a></div>
           </motion.div>
         )}
       </motion.div>

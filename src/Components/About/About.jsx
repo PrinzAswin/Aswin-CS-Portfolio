@@ -248,7 +248,7 @@ const designcontainer = [
           animate={{x, y}}
           transition={{ type: "spring", damping: 40, stiffness: 500, mass: 3}}
           className="aboutlink ">
-          <motion.p to='/about' 
+          <motion.p
            ref={refer}
            onMouseMove={handleMouse}
            onMouseLeave={reset}

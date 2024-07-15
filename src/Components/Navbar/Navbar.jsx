@@ -36,10 +36,10 @@ const Navbar = () => {
 
         <motion.ul  
             className='pagesul'>
-          {navMenu.map((item) => (
+          {navMenu.map((items, item) => (
           <motion.li className='pagesli' key={item}>
             <motion.a href={item.link}>
-              {item.name}
+              {items.name}
             </motion.a>
           </motion.li>
           ))}

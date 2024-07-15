@@ -26,14 +26,14 @@ const Home = () => {
     stiffness: 300,
   });
 
-  const velocityFactor = useTransform(smoothVelocity, [0, 2000], [0, 4], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 3000], [0, 4], {
     clamp: false,
   });
-  const x = useTransform(baseX, (v) => `${wrap(-10, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-1, -49, v)}%`);
   const directionFactor = useRef(1);
 
   useAnimationFrame((t, delta) => {
-    let moveBy = directionFactor.current * 1.2 * (delta / 3000);
+    let moveBy = directionFactor.current * (-2.1) * (delta / 3000);
     if (velocityFactor.get() < 0){
       directionFactor.current = -1;
     }
@@ -46,7 +46,7 @@ const Home = () => {
 
   // parallax
   const y1 = useTransform(scrollY, [0, 300], [0, 100]);
-  const y2 = useTransform(scrollY, [0, 300], [0, 150]);
+  const y2 = useTransform(scrollY, [0, 300], [0, 200]);
 
   return (
     <>
@@ -54,6 +54,7 @@ const Home = () => {
       <main className='Homepage'> 
       <motion.div className="box" style={{ y: y1, x: 0 }}>
       <img className='Mypic' src='Images/Aswin.jpg' alt='Aswin' width='300' />
+      <img className="mobilepic" src='Images/AswinMobile.png' alt='aswin' />
       <div className='leftsidecontent'>
         <div className='blockcontent'></div>
           <div className="Location" >Located in<br />Tamilnadu,<br />Madurai</div>
@@ -64,18 +65,16 @@ const Home = () => {
         <motion.ul className="side-content"
          style={{ y: y2, x: 0 }} >
           <li><span className="material-symbols-outlined">south_east</span></li><br />
-          <li className='side-content1' >Ui/Ux designer</li>
-          <li className='side-content1' >& MERN Stack</li>
-          <li className='side-content1' > Developer</li>
+          <li className='side-content1'>Ui/Ux designer</li>
+          <li className='side-content1'>& MERN Stack</li>
+          <li className='side-content1'>Developer</li>
         </motion.ul>
         <div className="sliderContainer">
          <motion.div className='content-slider' style={{ x }}>
-            <motion.span> — Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
-            <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
-            <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
-            <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
-            <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
-            <motion.span> Aswin cs • Ui/Ux designer & MERN Stack Developer —</motion.span>
+            <motion.span> Aswin cs • MERN Stack Developer & Ui/Ux designer —</motion.span>
+            <motion.span> Aswin cs • MERN Stack Developer & Ui/Ux designer —</motion.span>
+            <motion.span> Aswin cs • MERN Stack Developer & Ui/Ux designer —</motion.span>
+            <motion.span> Aswin cs • MERN Stack Developer & Ui/Ux designer —</motion.span>
          </motion.div>
         </div>
         </main>
