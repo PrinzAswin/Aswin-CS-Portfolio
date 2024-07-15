@@ -73,7 +73,7 @@ const Ashoppy = () => {
             <div className="projectphoto">
               <div className="deviceimagecontainer">
                 <img className='deviceimage' src={device} alt="device" />
-                <video autoPlay loop className='webimage' src={website} alt="Ashoppy.in" />
+                <video autoPlay loop muted className='webimage' src={website} alt="Ashoppy.in" />
               </div>
             </div>
             <div className="projectoverviewcontainer">
