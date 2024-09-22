@@ -9,12 +9,28 @@ const Projects = () => {
     {
       title: "Ashoppy.in",
       discription: "Design & Development",
+      dis2: "",
       link: "/projects/Ashoppy.in",
       image: "./ashoppy.png"
     },
     {
       title: "Happy Rentals",
       discription: "MERN Stack Development",
+      dis2: "",
+      link: "/projects/HappyRentals",
+      image: "./happyRentals.png"
+    },
+    {
+      title: "To Do App",
+      discription: "MERN Stack Development",
+      dis2: "",
+      link: "/projects/HappyRentals",
+      image: "./happyRentals.png"
+    },
+    {
+      title: "Ashgram App",
+      discription: "MERN Stack Development",
+      dis2: "under development...",
       link: "/projects/HappyRentals",
       image: "./happyRentals.png"
     }
@@ -74,19 +90,25 @@ const Projects = () => {
         {projectItems.map((items,index) => (
           <Link className='linkpart' to={items.link} key={index}>
             <motion.div 
-            onMouseOver={(e) => handleMouseOver(e, items.image, items.link)} 
+            onMouseOver={(e) => handleMouseOver(e, items.image)} 
             onMouseMove={handleMouseMove} 
             onMouseOut={handleMouseOut} 
             className="projectbox" 
             variants={itemVariants1}>
 
             <hr className='ruler'/>
+            <br/>
               <Link to={projectItems.link} className='projectContents' key={index}>
                 <div className="conrow">
-                  <h1 className='protitle' style={{color:'black'}}>{items.title}</h1>
+                <Link to={projectItems.link} key={index}>
+                <h1 className='protitle' style={{color:'black'}}>{items.title}</h1>
+                </Link>
                 </div>
                 <div className="concol">
                   <p className='prodiscription' style={{color:'black'}}>{items.discription}</p>
+                </div>
+                <div className="concol">
+                  <p className='protit2' style={{color:'black'}}>{items.dis2}</p>
                 </div>
               </Link>
             </motion.div>

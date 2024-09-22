@@ -33,7 +33,7 @@
     }
     
     .protitle {
-        width: 50rem;
+        width: 30rem;
         font-family: poppins, serif;
         font-weight: 400;
         color: #1C1D20;
@@ -60,8 +60,25 @@
         font-size: clamp(.8rem, 30vw, .7rem);
         position: relative;
         top: 1rem;
-        margin-left: 5rem;
+        left: 28rem;
         opacity: 1;
+        transition: all .23s ease;
+    }
+    
+    .protit2 {
+        width: 30rem;
+        font-family: poppins, serif;
+        font-weight: 400;
+        color: #1C1D20;
+        font-size: clamp(1rem, 30vw, .7rem);
+        margin-right: 0.3rem;
+        height: 8rem;
+        position: relative;
+        top: 8rem;
+        left: -37.4rem;
+        bottom: .9rem;
+        margin: 1rem;
+        opacity: 0.8;
         transition: all .23s ease;
     }
     
@@ -223,8 +240,8 @@
     .webimage {
         position: absolute;
         top: .53rem;
-        width: 54.815rem;
-        height: 39.2rem;
+        width: 54.80rem;
+        height: 34.2rem;
         border-radius: 17.8px 17.8px 0 0;
     }
     /* projectoverviewcontainer */
